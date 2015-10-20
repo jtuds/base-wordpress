@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    $FOREGROUND COLOURS
+\*------------------------------------*/
+
+/**
+ * Helper classes for giving elements a certain foreground color
+ * Where possible it is better to apply color to the element class itself rather than adding a color class
+ */
+
+[class*="--white"] {
+  color:#fff !important;
+}
+
+[class*="--brand-color"] {
+  color:$brand-color !important;
+}
+
+[class*="--primary-dark"] {
+  color:$primary-dark !important;
+}
+
+[class*="--tertiary-dark"] {
+  color:$tertiary-dark !important;
+}
+
+[class*="--color-variant-one"] {
+  color:$color-variant-one !important;
+}
+
+[class*="--color-variant-two"] {
+  color:$color-variant-two !important;
+}
+
+[class*="--color-variant-three"] {
+  color:$color-variant-three !important;
+}
+
+[class*="--color-variant-four"] {
+  color:$color-variant-four !important;
+}
+
+[class*="--color-variant-five"] {
+  color:$color-variant-five !important;
+}

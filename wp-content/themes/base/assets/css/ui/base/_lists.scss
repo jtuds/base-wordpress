@@ -1,0 +1,53 @@
+/*------------------------------------*\
+    $LISTS
+\*------------------------------------*/
+
+ul, ol, menu, dir, dd {
+	padding-left:0;
+	margin-left:$base-spacing-unit*2;
+}
+
+ul, ol, menu, dir {
+
+	li {
+		list-style-position: inside;
+	}
+}
+
+ul, menu, dir {
+
+	li {
+		list-style-type:square;
+	}
+}
+
+.list--flush {
+	margin-left:0;
+
+	li {
+		list-style: none;
+	}
+}
+
+.list--no-style {
+
+	li {
+		list-style: none;
+	}
+}
+
+.list--inline  {
+
+	li {
+		display:inline-block;
+		vertical-align:top;
+	}
+}
+
+.list--inside {
+	margin:0;
+
+	li {
+		list-style: inside;
+	}
+}

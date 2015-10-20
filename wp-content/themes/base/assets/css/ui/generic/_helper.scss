@@ -1,0 +1,127 @@
+ /*------------------------------------*\
+    $HELPER
+\*------------------------------------*/
+
+/**
+ * Helper classes
+ *
+ * These classes should only be used when it doesn't make sense to give an element a unique class and style it within that
+ *
+ * These classes are also forceful so only use them when sure that the styles are required at all times and will not change in different scenarios or layouts
+ */
+
+ .display-block {
+ 	display:block !important;
+ }
+
+.vertical-align-middle {
+	display: inline-block !important;
+	vertical-align: middle !important;
+}
+
+.vertical-align-baseline {
+	display: inline-block !important;
+	vertical-align: baseline !important;
+}
+
+.flex-vertical-align-middle {
+	display:flex;
+	align-items:center;
+}
+
+.vertical-align-top {
+	display: inline-block !important;
+	vertical-align: top !important;
+}
+
+.vertical-align-bottom {
+	display: inline-block !important;
+	vertical-align: bottom !important;
+}
+
+.word-break {
+	word-break:break-all !important;
+}
+
+
+
+/**
+ * Make background images fixed position - simple parallax effect
+ */
+
+[class*="--parallax"] {
+	background-attachment:fixed;
+}
+
+
+
+/**
+ * Instrinsic ratios
+ *
+ * Credit http://alistapart.com/article/creating-intrinsic-ratios-for-video/
+ */
+
+.wrapper-stretch {
+	position: relative;
+	padding-bottom: 75%;
+	height: 0;
+
+	@media ($breakpoint-medium) {
+		padding-bottom: 33%;
+	}
+}
+
+.stretch-element {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.font--primary { 
+	font-family:$brand-face; 
+}
+
+.font--secondary { 
+	font-family:$brand-face-secondary; 
+}
+
+.weight--bold {
+	font-weight:$bold;
+}
+
+.weight--medium {
+	font-weight:$medium;
+}
+
+.weight--light {
+	font-weight:$light;
+}
+
+.weight--extra-light {
+	font-weight:$extra-light;
+}
+
+[data-href] {
+  cursor:pointer;
+}
+
+
+.font--zero {
+	font-size:0;
+}
+
+.img--auto-sides {
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+.img--lazyload {
+	display:none;
+}

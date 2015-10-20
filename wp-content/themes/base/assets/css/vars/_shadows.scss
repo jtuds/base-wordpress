@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    $SHADOWS
+\*------------------------------------*/
+
+/**
+ * Shadow variables are used in shadow mixins so shadow styles can be reused consistently
+ */
+
+/**
+ * Colours
+ */
+
+$shadow-color: $primary-dark;
+$shadow-color-light: $primary;
+$secondary-shadow-color: $secondary-dark;
+
+
+
+/**
+ * Positions
+ */
+
+$shadow-bottom: 0 1px rgba($shadow-color, .6), 0 1px 3px $shadow-color;
+$shadow-bottom-light: 0 .5px rgba($shadow-color-light, .6), 0 1px 4px rgba($shadow-color-light, .3);
+$shadow-full: 0 3px 4px $shadow-color;
+$shadow-full-light: 0 3px 4px $shadow-color-light;
+$shadow-secondary-bottom: 0 1px rgba($secondary-shadow-color, .8);
+
+
+
+/**
+ * Mixins
+ */
+
+@mixin shadow-bottom() {
+    box-shadow: $shadow-bottom;
+}
+@mixin shadow-bottom-light() {
+    box-shadow: $shadow-bottom-light;
+}
+@mixin shadow-full() {
+    box-shadow: $shadow-full;
+}
+@mixin shadow-full-light() {
+    box-shadow: $shadow-full-light;
+}
+@mixin shadow-secondary-bottom() {
+    box-shadow: $shadow-secondary-bottom;
+}
+@mixin form-shadow($color) {
+    box-shadow:inset 0 1px scale-color($color, $lightness: -15%),
+    inset 0 0 0 1px $color,
+    inset 0 1px 1px rgba(scale-color($color, $lightness: -15%), .75);
+}

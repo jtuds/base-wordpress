@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    $TABLES
+\*------------------------------------*/
+
+/**
+ * Vars
+ */
+
+$table-header-border-color: $divider-dark;
+$table-border-color: $divider;
+$table-header-color: $tertiary-dark;
+$table-main-color: $brand-color;
+
+
+
+/**
+ * Styles
+ */
+
+table {
+	font-weight:$medium;
+
+	@include media-query(palm) {
+		overflow:scroll;
+	}
+
+	thead tr {
+		border-bottom:2px solid $table-header-border-color;
+	}
+
+	tr {
+		border-bottom:1px solid $table-border-color;
+	}
+
+	th, td:first-of-type {
+		color:$table-header-color;
+	}
+
+	th {
+		font-family: $brand-face;
+		font-weight:$medium;
+	}
+
+	th, td {
+		padding:$base-spacing-unit / 2;
+		padding-left: 0;
+		text-align: left;
+	}
+}

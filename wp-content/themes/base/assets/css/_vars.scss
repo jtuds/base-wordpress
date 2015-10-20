@@ -1,0 +1,86 @@
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+
+/**
+ * Any variables you find set in inuit.css’ `_vars.scss` that you do not wish to
+ * keep, simply redefine here. This means that if inuit.css, for example, sets
+ * your `$base-font-size` at 16px and you wish it to be 14px, simply redeclare
+ * that variable in this file. inuit.css ignores its own variables in favour of
+ * using your own, so you can completely modify how inuit.css works without ever
+ * having to alter the framework itself.
+ */
+
+
+
+/**
+ * Debug mode
+ * 
+ * Debug mode will visually highlight any potential markup/accessibility quirks
+ * in the browser. Set to `true` or `false`.
+ */
+
+$debug-mode:false;
+
+
+
+/**
+ * Objects and abstractions
+ * 
+ * All of inuit.css’ objects and abstractions are initially turned off by
+ * default. This means that you start any project with as little as possible,
+ * and introducing objects and abstractions is as simple as switching the
+ * following variables to `true`. Doing so will enable inuit object classes
+ */
+
+@import "vars/inuit-objects";
+
+
+
+/**
+ * Layout
+ *
+ * Define site layout variables such as the site maximum width
+ */
+
+@import "vars/layout";
+
+
+
+/**
+ * Responsive setup
+ *
+ * Set up the responsive classes, e.g. whether to use grid push classes (false by default)
+ */
+
+@import "vars/responsive";
+
+
+
+/**
+ * Typography
+ *
+ * Typography settings. This is for things like font sizes which change on a project basis and is not the place to set things like default spacing, this is dealt with the in `base/` folder
+ */
+
+@import "vars/typography";
+
+
+
+/**
+ * Colors
+ *
+ * Define project colors 
+ */
+
+@import "vars/colors/colors";
+
+
+
+/**
+ * Shadows
+ *
+ * Define project shadow styles
+ */
+
+@import "vars/shadows";

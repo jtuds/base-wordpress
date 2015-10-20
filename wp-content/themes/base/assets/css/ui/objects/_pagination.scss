@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    $PAGINATION
+\*------------------------------------*/
+
+/**
+ * The rules in this file compensate for slightly different markup generated from different code. E.g. from Wordpress core code and from plugin code, they output slightly different pagination classes but the desired outcome is the same
+ */
+
+.woocommerce-pagination, .questions__pagination {
+
+	> ul {
+		margin-left:0;
+		text-align: center;
+
+		> li {
+			@extend .pagination__item;
+			display:inline-block;
+			vertical-align: middle;
+
+			.current, &.active, .dots, &.dot {
+				color:$tertiary-dark;
+			}
+
+			&.next, .next, &.prev, .prev {
+				padding:$base-spacing-unit/1.5;
+				background-color:$brand-color;
+				display:block;
+				border-radius:$brand-round;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+
+			&.next, .next {
+				background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%229%22%20height%3D%2212%22%20viewBox%3D%220%200%209%2012%22%3E%0D%0A%20%20%3Cdefs%3E%0D%0A%20%20%20%20%3Cstyle%3E%0D%0A%0D%0A%20%20%20%20%20%20.cls-2%20%7B%0D%0A%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0D%0A%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%3C%2Fstyle%3E%0D%0A%20%20%3C%2Fdefs%3E%0D%0A%20%20%3Cpath%20d%3D%22M1.983%2C0.011%20C1.914%2C0.011%201.858%2C0.039%201.803%2C0.080%20C1.803%2C0.080%200.053%2C1.830%200.053%2C1.830%20C-0.044%2C1.927%20-0.044%2C2.094%200.053%2C2.191%20C0.053%2C2.191%203.872%2C6.009%203.872%2C6.009%20C3.872%2C6.009%200.053%2C9.828%200.053%2C9.828%20C-0.044%2C9.925%20-0.044%2C10.092%200.053%2C10.189%20C0.053%2C10.189%201.803%2C11.938%201.803%2C11.938%20C1.900%2C12.036%202.067%2C12.036%202.164%2C11.938%20C2.164%2C11.938%207.913%2C6.190%207.913%2C6.190%20C8.010%2C6.093%208.010%2C5.926%207.913%2C5.829%20C7.913%2C5.829%202.164%2C0.080%202.164%2C0.080%20C2.108%2C0.039%202.053%2C0.011%201.983%2C0.011%20Z%22%20id%3D%22path-1%22%20class%3D%22cls-2%22%20fill-rule%3D%22evenodd%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A');
+
+				.no-svg & {
+					background-image: url('../images/png/caret-right-white.png');
+				}
+			}
+
+			&.prev, .prev {
+				background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2017.1.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%0D%0A%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%229%22%20height%3D%2212%22%20viewBox%3D%220%200%209%2012%22%3E%0D%0A%20%20%3Cdefs%3E%0D%0A%20%20%20%20%3Cstyle%3E%0D%0A%0D%0A%20%20%20%20%20%20.cls-2%20%7B%0D%0A%20%20%20%20%20%20%20%20fill%3A%20%23ffffff%3B%0D%0A%20%20%20%20%20%20%7D%0D%0A%20%20%20%20%3C%2Fstyle%3E%0D%0A%20%20%3C%2Fdefs%3E%0D%0A%20%20%3Cpath%20d%3D%22M5.8%2C11.9L0.1%2C6.2C0%2C6.1%2C0%2C5.9%2C0.1%2C5.8l5.7-5.7C5.9%2C0%2C6.1%2C0%2C6.2%2C0.1l1.7%2C1.7C8%2C1.9%2C8%2C2.1%2C7.9%2C2.2L4.1%2C6%0D%0A%09%09l3.8%2C3.8c0.1%2C0.1%2C0.1%2C0.3%2C0%2C0.4l-1.7%2C1.7C6.1%2C12%2C6.1%2C12%2C6%2C12S5.9%2C12%2C5.8%2C11.9z%22%20id%3D%22path-1%22%20class%3D%22cls-2%22%20fill-rule%3D%22evenodd%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A');
+
+				.no-svg & {
+					background-image: url('../images/png/caret-left-white.png');
+				}
+			}
+		}
+	}
+}
+
+.pagination__item {
+	padding:$base-spacing-unit/4;
+	color:white;
+	font-family:$brand-face;
+	font-size:em(18px);
+	font-weight:$bold;
+}
+
+.pagination__item--disabled {
+	color:$tertiary-dark;
+}

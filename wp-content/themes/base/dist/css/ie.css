@@ -1,0 +1,18 @@
+/**
+ * .ie9 styles will apply to ie9 and ie8
+ * .ie styles will appear across all ie versions that accept conditional comments
+ */
+.ie .wf-loading * {
+  font-family: sans-serif !important; }
+
+.ie9 body {
+  min-width: 960px; }
+
+.ie9 .product__variations-table tr, .ie9 .product__variations-table td {
+  float: left; }
+
+.ie9 .slick-dots {
+  background: none !important; }
+
+.ie9 .shopping-table .shop-actions .coupon input {
+  height: 47px; }

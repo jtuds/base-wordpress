@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    $RADIO
+\*------------------------------------*/
+
+/**
+ * This file styles fake radio buttons, i.e. where a radio style is required without an actual radio input being present
+ */
+
+.faux-radio {
+	display:inline-block;
+	width:15px;
+	height:15px;
+	margin-right:$base-spacing-unit / 4;
+	vertical-align: text-top;
+	border:1px solid $tertiary-dark;
+	border-radius:100%;
+
+	&.checked {
+		background-color:$color-variant-four;
+		border:none;
+	}
+}
+
+
+input.faux-radio {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	&:checked {
+		background-color:$color-variant-four;
+		border:none;
+	}
+}

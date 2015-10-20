@@ -1,0 +1,205 @@
+/*------------------------------------*\
+    $BACKGROUND COLOURS
+\*------------------------------------*/
+
+/**
+ * These classes will set a background and foreground colour on any element that contains the defined class. They will also set the colours of any links and buttons within the element if those links or buttons do not have their own colours set individually
+ */
+
+[class*="--background-white"] {
+    background-color:white;
+    color:$primary;
+
+    &.btn {
+        color:$secondary;
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color(#fff, $lightness: -15%);
+    }
+}
+
+[class*="--background-primary"] {
+    background-color:$primary-dark;
+    color:$tertiary;
+
+    &.btn {
+        border-color:$primary-dark;
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($primary-dark, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($primary-dark, $lightness: 15%);
+    }
+}
+
+[class*="--background-primary-dark"] {
+    background-color:$primary-dark;
+    color:$primary;
+
+    #{$heading-selectors} {
+      color:#fff;
+    }
+
+    &.btn {
+        border-color:$primary;
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($primary, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($primary, $lightness: 15%);
+    }
+}
+
+[class*="--background-secondary"] {
+    background-color:$secondary;
+    color:#fff;
+
+    &.btn {
+        border-color:$secondary-dark;
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($secondary-dark, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($secondary-dark, $lightness: 15%);
+    }
+}
+
+[class*="--background-secondary-dark"] {
+    background-color:$secondary-dark;
+    color:$secondary;
+
+    &.btn {
+        border-color:$secondary;
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($secondary, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($secondary, $lightness: 15%);
+    }
+}
+
+[class*="--background-tertiary"] {
+    background-color:$tertiary;
+    color:$primary;
+
+    &.btn {
+        border-color:$primary;
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($primary, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($primary, $lightness: 15%);
+    }
+}
+
+[class*="--background-tertiary-dark"] {
+    background-color:#f2f2ec;
+    color:$primary;
+
+    &.btn {
+        border-color:$primary;
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($primary, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($primary, $lightness: 15%);
+    }
+}
+
+[class*="--background-quaternary"] {
+    background-color:$brand-color-light;
+    color:$primary;
+
+    &.btn {
+        border-color:$primary;
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($primary, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($primary, $lightness: 15%);
+    }
+}
+
+[class*="--background-brand"] {
+    background-color:$brand-color;
+    color:$tertiary;
+
+    &.btn {
+        border-color:scale-color($brand-color, $lightness: 25%);
+    }
+
+    &.btn:active, &.btn:hover {
+        border-color:scale-color($primary, $lightness: 15%);
+    }
+
+    &.link:hover, &.link:active, &.btn:active, &.btn:hover {
+        background-color:scale-color($primary, $lightness: 15%);
+    }
+}
+
+[class*="--background-color-variant-one"] {
+    background-color:$color-variant-one;
+    color:#fff;
+
+    #{$heading-selectors} {
+      color:#fff;
+    }
+}
+
+[class*="--background-color-variant-two"] {
+    background-color:$color-variant-two;
+    color:#fff;
+
+    #{$heading-selectors} {
+      color:#fff;
+    }
+}
+
+[class*="--background-color-variant-three"] {
+    background-color:$color-variant-three;
+    color:#fff;
+
+    #{$heading-selectors} {
+      color:#fff;
+    }
+}
+
+[class*="--background-color-variant-four"] {
+    background-color:$color-variant-four;
+    color:#fff;
+
+    #{$heading-selectors} {
+      color:#fff;
+    }
+}
+
+[class*="--background-color-variant-five"] {
+    background-color:$color-variant-five;
+    color:#fff;
+
+    #{$heading-selectors} {
+      color:#fff;
+    }
+}

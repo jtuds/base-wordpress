@@ -1,0 +1,34 @@
+/*------------------------------------*\
+    $DEFAULTS
+\*------------------------------------*/
+
+/**
+ * Here is where all misc variables should be edited.
+ *
+ * In this file you will find any variables that have not been categorised in to other "var" files, e.g. "layout, responsive, typography" or that aren't defined in the base or generic folders.
+ * 
+ */
+
+/**
+ * Border radius
+ */
+
+$brand-round: 3px;
+
+
+
+/**
+ * Cubix bezier
+ */
+
+$brand-cubic-bezier: cubic-bezier(.6, .15, .2, 1);
+
+
+
+/**
+ * Give any class with "--radius" the default brand round border radius
+ */
+
+[class*="--radius"] {
+    border-radius:$brand-round;
+}

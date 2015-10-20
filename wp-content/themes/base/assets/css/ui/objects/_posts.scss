@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    $POSTS
+\*------------------------------------*/
+
+/**
+ * Some generic styles for the Wordpress posts
+ *
+ * 1. We can style the blockquote heading by targetting all the h tags but I've also added a class to this in case we get chance in the future to make this area editable via custom fields, in which case we will be able to add a class to the element
+ *
+ * 2. The h2 style isn't used in post content areas. This would be ok to not consider but as h tags can be added to the WYSIWYG content it is best that we re assign header styles. We are basically just changing the visual hierarchy of the h tags by assiging the h2 classes to h1s etc
+ */
+
+.post__content {
+	margin-bottom: $base-spacing-unit*2;
+
+	h1 { /* [2] */
+		@extend .beta;
+	}
+
+	h2 {
+		@extend .gamma;
+	}
+
+	h3 {
+		@extend .delta;
+	}
+
+	img {
+		margin-bottom:$base-spacing-unit / 2;
+		margin-right:$base-spacing-unit / 2;
+	}
+
+	> p:child {
+		font-weight:$bold;
+	}
+
+	blockquote {
+		padding:$base-spacing-unit;
+		background-color: $quaternary;
+		quotes:none;
+
+		#{$heading-selectors}, .blockquote__heading { /* [1] */
+			@extend .gamma;
+		}
+
+		& p:before, & p:after {
+			content:"";
+		}
+	}
+
+	ol, ul {
+		margin-left:0;
+
+		li {
+			list-style-position: inside;
+		}
+	}
+}

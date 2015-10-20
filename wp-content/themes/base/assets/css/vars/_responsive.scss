@@ -1,0 +1,109 @@
+/*------------------------------------*\
+    $RESPONSIVE
+\*------------------------------------*/
+
+/**
+ * Tell inuit.css when breakpoints start.
+ * These widths will determine at which width the inuit breakpoints kick in
+ * Usage example @include media-query(palm) {}
+ */
+
+$lap-start:         481px!default;
+$desk-narrow-start: 960px!default;
+$desk-start:        1024px!default;
+$desk-wide-start:   1200px!default;
+
+
+
+/**
+ * Set extra breakpoints
+ * Usage example @media ($breakpoint-medium) {}
+ * Can be used in the grid setup - see generic/_widths..scss. These breakpoints will override the "desk-narrow, lap-and-up" etc classes when both exist on an element
+ */
+
+$breakpoint-medium: unquote("min-width: 37.5em");
+$breakpoint-medium-max: unquote("max-width: 37.49em");
+$breakpoint-wide-medium: unquote("min-width: 48em");
+$breakpoint-wide-medium-max: unquote("max-width: 48.99em");
+$breakpoint-wide: unquote("min-width: 52.5em");
+$breakpoint-wide-max: unquote("max-width: 52.4375em");
+$breakpoint-large: unquote("min-width: X"); 
+$breakpoint-large-max: unquote("max-width: X"); 
+$breakpoint-wide-large: unquote("min-width: X"); 
+$breakpoint-wide-large-max: unquote("max-width: X");
+
+
+
+/**
+ * Navigation breakpoints
+ *
+ * These variables allow us to build classes around the nav width
+ */
+
+$nav-width: 300px;
+$nav-width-max: ($nav-width - 1);
+$breakpoint-nav: unquote("min-width: #{$nav-width}");
+$breakpoint-nav-max: unquote("max-width: #{($nav-width - 1)}");
+
+
+
+/**
+ * Turn on extra responsive classes?
+ */
+
+$responsive-extra:false!default;
+
+
+
+/**
+ * Responsive push and pull produce a LOT of code, only turn them on if you
+ * definitely need them.
+ */
+
+
+
+/**
+ * Push
+ */
+
+$push:              false!default;
+
+/**
+ * Note: `$push` variable above must be set to false!default before enabling these because enabled the `$push` variable will enable all push classes, whilst the ones below do so on an individual basis.
+ */
+
+$palm-push:         false!default;
+$lap-push:          false!default;
+$lap-and-up-push:   false!default;
+$portable-push:     false!default;
+$desk-push:         false!default;
+$desk-narrow-push:  false!default;
+$desk-narrow-push-max:  false!default;
+$breakpoint-medium-push: false!default;
+$breakpoint-medium-max-push: false!default;
+$breakpoint-wide-medium-push: false!default;
+$breakpoint-wide-medium-max-push: false!default;
+
+
+
+/**
+ * Pull
+ */
+
+$pull:              false!default;
+
+/**
+ * Note: `$pull` variable above must be set to false!default before enabling these because enabled the `$pull` variable will enable all push classes, whilst the ones below do so on an individual basis.
+ */
+
+$palm-pull:         false!default;
+$lap-pull:          false!default;
+$lap-and-up-pull:   false!default;
+$portable-pull:     false!default;
+$desk-pull:         false!default;
+$desk-narrow-pull:  false!default;
+$desk-narrow-pull-max:  false!default;
+$breakpoint-medium-pull: false!default;
+$breakpoint-medium-max-pull: false!default;
+$breakpoint-wide-medium-pull: false!default;
+$breakpoint-wide-medium-max-pull: false!default;

@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $CARD
+\*------------------------------------*/
+
+/**
+ * Cards can contain different content within them, e.g. a testimonial card or a portfolio card. Therefore we need to be able to lay them out on an idividual basis.
+ *
+ * 1. Make cards act the same way as grid classes. The wrapper pulls the cards left with a minus margin and the card items themselves provide gutters with their padding
+ */
+
+.cards {
+	margin-left: -$base-spacing-unit; /* [1] */
+}
+
+
+
+/*
+ * ".l-" namespace indicates the class is for layout styling
+ * 
+ * The card layout class is to provide layout elements to the card objects. No layout styling should be applied to the cards themselves as this makes an assumption a card always has the same layout in each scenario
+ *  
+ *  A card has a default width but this can be changed on a per card basis
+ */
+
+.l-card {
+	width:25%;
+	padding-left:$grid-gutter;
+	padding-right:$grid-gutter;
+	display:inline-block;
+}
+
+.card {
+
+	> a {
+		display:block;
+	}
+}
+
+.card--page {
+
+}
+
+.card--post {
+	
+}
+
+.card--portfolio {
+
+}
+
+.card--team {
+	
+}
+
+.card--testimonial {
+	
+}

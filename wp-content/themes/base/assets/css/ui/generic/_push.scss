@@ -1,0 +1,75 @@
+ /*------------------------------------*\
+    $PUSH
+\*------------------------------------*/
+
+/**
+ * Inuit.css sets up push and push classes but only for the main breakpoints, here we extend it to the others
+ */
+
+@media ($breakpoint-medium) {
+	@include push-setup("medium-")
+}
+@media ($breakpoint-medium-max) {
+	@include push-setup("medium-max")
+}
+@media ($breakpoint-wide-medium) {
+	@include push-setup("wide-medium-")
+}
+@media ($breakpoint-wide-medium-max) {
+	@include push-setup("wide-medium-max")
+}
+
+
+
+/**
+ * Each push class is enabled individually in _vars.scss. Here we check whether it is enabled and set up the classes if so
+ */
+
+@if $breakpoint-medium-push == true{
+
+    @media ($breakpoint-medium) {
+		@include push-setup("medium-")
+	}
+
+}
+
+@if $breakpoint-medium-max-push == true{
+
+    @media ($breakpoint-medium-max) {
+		@include push-setup("medium-max")
+	}
+
+}
+
+@if $breakpoint-wide-medium-push == true{
+
+    @media ($breakpoint-wide-medium) {
+		@include push-setup("wide-medium-")
+	}
+
+}
+
+@if $breakpoint-wide-medium-max-push == true{
+
+    @media ($breakpoint-wide-medium-max) {
+		@include push-setup("wide-medium-max")
+	}
+
+}
+
+@if $desk-narrow-push == true{
+
+
+    @include media-query(desk-narrow){
+        @include push-setup("desk-narrow-");
+    }
+
+}
+
+@if $desk-narrow-push-max == true{
+
+    @include media-query(desk-narrow-max){
+        @include push-setup("desk-narrow-max-");
+    }
+
+}

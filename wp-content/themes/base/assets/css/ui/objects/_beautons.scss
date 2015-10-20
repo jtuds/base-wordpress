@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    $BEAUTONS.CSS
+\*------------------------------------*/
+
+/**
+ * Vars
+ */
+
+$btn-default-bg: white;
+
+
+
+/**
+ * Defaults
+ */
+
+button {
+	--webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+button, .btn {
+	background-color:white;
+	border:2px solid; // will inherit from color property
+}
+
+
+
+/**
+ * Don't use the number modifiers (e.g. "--one, --two" etc) to style anything aside from colours. If a button has a modified look, use a new modifier
+ */
+
+.btn--one {
+	background-color:white;
+	color:$brand-color;
+}
+
+.btn--two {
+	background-color:$brand-color;
+	color:white;
+}
+
+.btn--three {
+	background-color:$tertiary-mid;
+	color:$primary;
+}
+
+.btn--four {
+	background-color:white;
+	color:$color-variant-four;
+}
+
+.btn--five {
+	background-color:$color-variant-four;
+	color:white;
+}
+
+.btn--six {
+	background-color:white;
+	color:$tertiary-dark;
+}
+
+.btn--seven {
+	background-color:inherit;
+	color:$primary;
+}
+
+.btn--round {
+	padding:$base-spacing-unit*2;
+	border-radius:100%;
+}

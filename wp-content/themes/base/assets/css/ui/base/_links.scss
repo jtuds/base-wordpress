@@ -1,0 +1,62 @@
+/*------------------------------------*\
+    $LINKS
+\*------------------------------------*/
+
+a {
+  color:$link-color;
+  text-decoration:none;
+  transition: .2s;
+  
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+}
+
+button[type="submit"], input[type="submit"], input[type="reset"] {
+
+  transition: .2s $brand-cubic-bezier;
+
+  &:hover, &:focus {
+    opacity: .8;
+  }
+}
+
+a.not-default-link {
+  color:inherit;
+}
+
+
+[data-href] {
+  transition: .2s;
+  
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+}
+
+.hover-underline {
+  position: relative;
+  
+  &, * { 
+    text-decoration:none;
+  }
+  
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background: transparent;
+    transition: .2s;
+  }
+  
+  &:hover, &:focus { 
+
+    &:before {
+     background: $primary;
+   } 
+  }
+}

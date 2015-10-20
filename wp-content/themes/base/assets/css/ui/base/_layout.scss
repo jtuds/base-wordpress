@@ -1,0 +1,89 @@
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+/**
+ * Wrappers
+ */
+
+.wrapper {
+	max-width:$site-max-width;
+	width:$site-width;
+	margin-right:auto;
+	margin-left:auto;
+	position:relative;
+	height:100%;
+
+	.wrapper {
+		width:auto;
+		padding-left:$base-spacing-unit;
+		padding-right:$base-spacing-unit;
+
+		@include media-query(palm) {
+  			padding-left: 0;
+  			padding-right: 0;
+		}
+	}
+
+	@include media-query(portable) {
+		width:$site-width - 5;
+	}
+}
+
+
+.wrapper--double { 
+	padding-left: $base-spacing-unit * 2;
+	padding-right: $base-spacing-unit * 2;
+}
+
+.wrapper--double-left {
+	padding-left: $base-spacing-unit * 2;
+}
+
+.wrapper--double-right {
+	padding-right: $base-spacing-unit * 2;
+}
+
+.wrapper--full {
+	width:100%;
+}
+
+.wrapper--half {
+	max-width:$site-max-width / 2;
+}
+
+.wrapper--thin {
+	max-width:$site-narrow-width;
+}
+
+.wrapper--x-thin {
+	max-width:$site-x-narrow-width;
+}
+
+.wrapper--flush-right {
+	margin-right:0;
+}
+
+.wrapper--flush-left {
+	margin-left:0;
+}
+
+
+
+/**
+ * Sitewide content layout
+ */
+
+.l-sitewide-header {
+	position:fixed;
+	top:0;
+	left:0;
+	height:100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width:$nav-width;
+}
+
+.l-sitewide-content {
+	padding-left:$nav-width;
+}

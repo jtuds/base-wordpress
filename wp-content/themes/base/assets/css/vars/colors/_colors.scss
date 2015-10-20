@@ -1,0 +1,73 @@
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+
+/**
+ * Brand colours
+ */
+
+$brand-color: #272F32;
+$brand-color-light: #000;
+$brand-color-secondary: #DAEAEF;
+$brand-color-tertiary: #DAEAEF;
+
+
+
+/**
+ * Hierarchical colours
+ */
+
+$primary: #000;
+$primary-dark: #000;
+$secondary: $brand-color;
+$secondary-light: $brand-color-light;
+$secondary-dark: #000;
+$tertiary: $brand-color-tertiary;
+$tertiary-mid: #000;
+$tertiary-dark: #000;
+$quaternary: #000;
+
+
+
+/**
+ * Use color-variant classes for colors that don't belong in a numbered sequence (e.g. "primary, secondary") and to avoid using explicit color names in classes (e.g. "color--red")
+ */
+
+$color-variant-one: #D53952;
+$color-variant-two: #22A0D8;
+$color-variant-three: #000;
+$color-variant-four: #000;
+$color-variant-five: #000;
+$color-variant-six: #000;
+
+$link-color:#A994C6;
+
+$google-red: #dd4b39;
+$facebook-blue: #3b5998;
+$twitter-blue: #55acee;
+
+$divider: #C5C5C5;
+$divider-dark: #979797;
+
+$error: #ff5a5f;
+$success: $brand-color;
+
+
+
+/**
+ * Background colors
+ *
+ * Define project resubale background color classes 
+ */
+
+@import "background-colors";
+
+
+
+/**
+ * Foreground colors
+ *
+ * Define project reusable foreground color classes 
+ */
+
+@import "foreground-colors";

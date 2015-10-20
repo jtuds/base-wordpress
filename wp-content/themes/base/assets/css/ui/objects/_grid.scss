@@ -1,0 +1,48 @@
+/*------------------------------------*\
+    $GRIDS
+\*------------------------------------*/
+
+$grid-gutter: $base-spacing-unit;
+
+.grid {
+	font-size:0;
+}
+
+.grid .grid__item,
+.comment-form-rating {
+	font-size:16px;
+  	font-size:1rem;
+}
+
+/**
+* Helpers for equal height grid items
+* Setting a VW or VH height on the grid parent and 100% height on the children grid__items should allow for fairly responsive equal heights
+*/
+.grid--flex {
+	display:flex;
+	flex-wrap:wrap;
+
+	> .grid__item {
+		display:flex;
+		flex-wrap:wrap;
+
+    &, > *, {
+      	min-height: 100%;
+    }
+
+		> * {
+			width:100%;
+		}
+	}
+
+	@include media-query(palm) {
+  	flex-flow: column wrap;
+	}
+}
+
+.grid--relative {
+
+	.grid__item {
+		position: relative;
+	}
+}

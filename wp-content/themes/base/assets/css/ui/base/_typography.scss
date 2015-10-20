@@ -1,0 +1,75 @@
+/*------------------------------------*\
+    $TYPOGRAPHY
+\*------------------------------------*/
+
+/**
+ * Default typography styles
+ */
+
+html {
+	@include media-query(portable) {
+		font-size:.875em;
+	}
+}
+
+p, li, .btn, .textwidget, td, th {
+	font-family: $brand-face-secondary;
+}
+
+p {
+	hyphens:none;
+
+	&.p--tight {
+		margin-bottom:$base-spacing-unit / 2;
+	}
+
+	&.p--x-tight {
+		margin-bottom:$base-spacing-unit / 4;
+	}
+}
+
+
+
+/** 
+ * Font size helpers
+ */
+
+.milli-size {
+	font-size:$milli-size;
+}
+
+.giga-size {
+	font-size:$giga-size;
+}
+
+.mega-size {
+	font-size:$mega-size;
+}
+
+.kilo-size {
+	font-size:$kilo-size;
+}
+
+.h1-size {
+	font-size:$h1-size;
+}
+
+.h2-size {
+	font-size:$h2-size;
+}
+
+.h3-size {
+	font-size:$h3-size;
+}
+
+.h4-size {
+	font-size:$h4-size;
+}
+
+.h5-size {
+	font-size:$h5-size;
+}
+
+.h6-size {
+	font-size:$h6-size;
+}

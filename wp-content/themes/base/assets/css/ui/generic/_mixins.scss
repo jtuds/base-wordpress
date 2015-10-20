@@ -1,0 +1,61 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/**
+ * Vertically align elements to the middle of their container
+ */
+
+@mixin vertical-align-middle() {
+	position: absolute;
+	top: 50%;
+	@include vendor(transform, translateY(-50%));
+}
+
+
+
+/**
+ * Panel default styles
+ */
+
+@mixin panel-styles($bg-color: transparent, $heading-color: inherit, $body-color: inherit, $link-color: $link-color, $form-input-bg: $input-background, $form-border-color: $form-border, $btn-bg-color: $btn-default-bg, $btn-color: inherit, $btn-border-color: inherit, $table-bg-color: inherit, $table-header-border-color: $table-header-border-color, $table-header-color: $table-header-color, $table-border-color: $table-border-color, $table-main-color: $table-main-color ) {
+
+	background-color:$bg-color;
+
+	#{$heading-selectors} {
+		color:$heading-color;
+	}
+
+	p, li, dl, fieldset, figure, pre, blockquote, address {
+		color:$body-color;
+	}
+
+	a {
+		color:$link-color;
+	}
+
+	.form__field, input, select, textarea {
+		background-color: $form-input-bg;
+		border-color: $form-border-color;
+	}
+
+	.btn, button, input[type="submit"] {
+		background-color:$btn-default-bg;
+		color:$btn-color;
+		border-color:$btn-border-color;
+	}
+
+	th, td {
+		background-color: $table-bg-color;
+	}
+
+	th {
+		border-color:$table-header-border-color;
+		color:$table-header-color;
+	}
+
+	td {
+		border-color: $table-border-color;
+		color:$table-main-color;
+	}
+}

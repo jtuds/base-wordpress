@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    $MISC
+\*------------------------------------*/
+
+mark {
+	background:$brand-color;
+	color:white;
+	padding:4px 6px;
+	border-radius: $brand-round;
+	@include font-size (14px, false);
+}

@@ -1,0 +1,45 @@
+/**
+ * For those poor souls without Javascript let's at least make it work
+ * This relies on Modernizer, specifically the "no-js" tag
+ */
+.no-js {
+  /**
+	 * Navigation
+	 */
+  /**
+	 * Category sidebar dropdown
+	 */ }
+  .no-js .nav--main {
+    width: auto; }
+  .no-js .nav__toggle__btn {
+    display: none; }
+  .no-js .nav__list {
+    float: none;
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: auto;
+    top: 0;
+    background-color: transparent;
+    text-align: center; }
+    .no-js .nav__list > li {
+      display: inline-block; }
+      .no-js .nav__list > li > a {
+        color: #615e5e; }
+        .no-js .nav__list > li > a:active, .no-js .nav__list > li > a:hover {
+          background-color: transparent;
+          color: #615e5e; }
+    .no-js .nav__list .current-menu-item > a {
+      background-color: transparent; }
+  .no-js .nav--account {
+    float: none;
+    display: block;
+    width: 50%;
+    margin: 0 auto; }
+    .no-js .nav--account > a {
+      width: 100%;
+      max-width: none;
+      text-align: center; }
+  .no-js .sidebar__list, .no-js .product-categories {
+    height: auto;
+    overflow: auto; }

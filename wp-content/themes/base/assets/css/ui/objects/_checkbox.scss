@@ -1,0 +1,36 @@
+/*------------------------------------*\
+    $CHECKBOX
+\*------------------------------------*/
+
+/**
+ * This file styles fake checkboxes, i.e. where a checkbox style is required without an actual checkbox input being present
+ *
+ * 1. I wouldn't be against making all checkboxes use the custom style by default but doing it only via a class for now
+ * 
+ */
+
+.faux-checkbox {
+	display:inline-block;
+	width:15px;
+	height:15px;
+	margin-right:$base-spacing-unit / 4;
+	vertical-align: text-top;
+	border:1px solid $tertiary-dark;
+	border-radius:$brand-round;
+
+	&.checked {
+		background-color:$color-variant-four;
+		border:none;
+	}
+}
+
+
+input.faux-checkbox { /* [1] */
+	-moz-appearance:none;
+	-webkit-appearance:none;
+
+	&:checked {
+		background-color:$color-variant-four;
+		border:none;
+	}
+}

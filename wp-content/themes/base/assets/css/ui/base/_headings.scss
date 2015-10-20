@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    $HEADINGS
+\*------------------------------------*/
+
+#{$heading-selectors} {
+	color:inherit;
+  font-family:$brand-face;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, .alpha {
+  font-weight:$h1-weight;
+  margin-bottom:$base-spacing-unit;
+  margin-bottom:(($base-spacing-unit) / $base-font-size)*1rem;
+
+  @include media-query(palm) {
+    font-weight: 500;
+    margin-bottom:$base-spacing-unit/2;
+    margin-bottom:(($base-spacing-unit/2) / $base-font-size)*1rem;
+    @include font-size($h2-size);
+  }
+}
+
+h2, .beta {
+  font-weight:$h2-weight;
+
+  @include media-query(palm) {
+    @include font-size($h3-size);
+  }
+}
+
+h3, .gamma {
+  font-weight:$h3-weight;
+
+  @include media-query(palm) {
+    @include font-size($h4-size);
+  }
+}
+
+h4, .delta {
+  font-weight:$h4-weight;
+}
+
+h5, .epsilon {
+  font-weight:$h5-weight;
+}
+
+h6, .zeta {
+  font-weight:$h6-weight;
+}
+
+h2, .beta, h3, .gamma, h4, .delta, h5, .epsilon, h6, .zeta {
+  margin-bottom:$base-spacing-unit / 1.5;
+  margin-bottom:(($base-spacing-unit / 1.5) / $base-font-size)*1rem;
+
+  @include media-query(palm) {
+    margin-bottom:$base-spacing-unit/2;
+    margin-bottom:(($base-spacing-unit/2) / $base-font-size)*1rem;
+  }
+}
+
+.heading--tight {
+	margin-bottom:$base-spacing-unit / 2;
+  margin-bottom:(($base-spacing-unit / $base-font-size) / 2)*1rem;
+}
+
+.heading--loose {
+	margin-bottom:$base-spacing-unit * 2;
+  margin-bottom:(($base-spacing-unit / $base-font-size) * 2)*1rem;
+}
+
+.heading--flush {
+	margin-bottom:0;
+}
+
+.heading--push-top {
+  margin-top:$half-spacing-unit * 1.5;
+  margin-top:(($half-spacing-unit / $base-font-size) * 1.5)*1rem;
+}
+
+.heading--loose-top {
+  margin-top:$half-spacing-unit * 2;
+  margin-top:(($half-spacing-unit / $base-font-size) * 2)*1rem;
+}

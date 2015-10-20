@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    $PANELS.CSS
+\*------------------------------------*/
+
+/**
+ * This file extends styles in 'ui/generic/widths.scss'
+ *
+ * Panels is a pretty generic name that refers generally to elements that are difficult to break down into individual objects but still need styling applied to them. They provide a method in which to group and style common elements in an abstract and reusable way. The name of the panels themselves should be arbitrary so that they can be reused in different scenarios. Using place names provides us with a semantically meaningless identifier that isn't attached to the style or layout of the element meaning that both the style and layout can be changed without affecting the panel name.
+ * However in some instances it makes sense to tie styling to naming where the styling is quite basic as in this instance, a change of style or layout should result in creating a new panel and not changing the existing panel styles
+ */
+
+.panel {
+	background-color: #B6E2F5;
+}
+
+
+
+/*------------------------------------*\
+    $STRONG
+\*------------------------------------*/
+
+.panel--strong {
+	background-color:#EEB6F5;
+}
+
+
+
+/*------------------------------------*\
+    $SUBTLE
+\*------------------------------------*/
+
+.panel--subtle {
+	background-color:#B6B6F5;
+}
+
+
+
+/*------------------------------------*\
+    $CTA
+\*------------------------------------*/
+
+.panel--cta {
+
+}
+
+
+
+/*------------------------------------*\
+    $SEARCH
+\*------------------------------------*/
+
+.panel--search {
+
+}
+
+
+
+/*------------------------------------*\
+    $ATHENS
+\*------------------------------------*/

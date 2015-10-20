@@ -1,0 +1,9 @@
+/**
+ * .ie9 styles will apply to ie9 and ie8
+ * .ie styles will appear across all ie versions that accept conditional comments
+ */
+
+// While fonts are loading, just use sans serif
+.ie .wf-loading * {
+	font-family:sans-serif !important;
+}

@@ -1,0 +1,57 @@
+/*------------------------------------*\
+    $BREADCRUMBS
+\*------------------------------------*/
+
+/**
+ * The breadcrumbs classes are outputted by Yoast so we don't have complete control over them thus we have to apply background icon via this file rather than adding it as a class to the element in HTML
+ */
+
+.breadcrumbs {
+	padding:$base-spacing-unit / 2;
+	padding-bottom: ($base-spacing-unit/2) + 3px;
+	background-color: $brand-color-light;
+  	position: relative;
+}
+
+.breadcrumbs__list {
+	@extend .list-inline;
+	@extend .list-no-style;
+	margin-bottom:0;
+}
+
+.breadcrumbs__item {
+	color:$brand-color;
+	font-family: $brand-face;
+	padding-right:24px;
+}
+
+.breadcrumbs__item--current {
+	font-weight:$bold;
+	background-image:none;
+
+	&, > a {
+		color:$primary;
+	}
+}
+
+
+
+/** 
+ * Yoast
+ * Generally just force Yoast markup to use the default breadcrumbs styles
+ */
+
+.breadcrumbs--yoast {
+
+	span > a, .breadcrumb_last {
+		font-family:$brand-face;
+	}
+
+	span > a {
+		@extend .breadcrumbs__item;
+	}
+
+	.breadcrumb_last {
+		@extend .breadcrumbs__item--current;
+	}
+}
