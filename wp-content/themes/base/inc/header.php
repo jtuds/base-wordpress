@@ -1,6 +1,6 @@
 <body <?php body_class(); ?>>
 	
-	<header class="l-sitewide-header sitewide-header">
+	<header class="sitewide-header">
 
 		<a class="logo sitewide-header__logo" href="<?php echo esc_url(home_url('/')); ?>" rel="home">CandidSky</a>
 
